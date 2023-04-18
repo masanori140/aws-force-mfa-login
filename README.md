@@ -6,7 +6,7 @@
 
 | Name       | Version |
 | ---------- | ------- |
-| terraform  | 1.3.9   |
+| terraform  | 1.4.4   |
 | terragrunt | 0.45.2  |
 
 ## Providers
