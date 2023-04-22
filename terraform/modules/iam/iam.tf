@@ -8,8 +8,10 @@ module "iam_plolicy" {
 
 module "iam_user" {
   source = "../../resources/iam/user"
-  users  = ["mfa_user"]
-  tags   = var.tags
+  /* destroy時のCannot delete entity, must delete login profile first.エラーを回避する為にforce_destroyをtrueにする */
+  force_destroy = true
+  users         = ["mfa_user"]
+  tags          = var.tags
 }
 
 module "iam_group" {
@@ -21,5 +23,6 @@ module "iam_group" {
     "arn:aws:iam::aws:policy/AmazonS3ReadOnlyAccess",
     module.iam_plolicy.iam_policy.arn
   ]
-  users = module.iam_user.iam_user.*.name
+  users      = module.iam_user.iam_user.*.name
+  depends_on = [module.iam_plolicy]
 }
