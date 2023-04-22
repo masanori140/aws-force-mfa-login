@@ -34,7 +34,7 @@ aws configure
 2. このリポジトリをクローンします。
 
 ```bash
-git clone https://github.com/your_username/aws-force-mfa-login.git
+git clone https://github.com/maishio/aws-force-mfa-login.git
 cd aws-force-mfa-login/terraform/enviroments/prod
 ```
 
