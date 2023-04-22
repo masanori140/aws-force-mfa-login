@@ -1,4 +1,4 @@
 variable "tags" {
-  description = "A map of tags to add to all resources"
+  description = "A mapping of tags to assign to the resource"
   type        = map(string)
 }
