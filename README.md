@@ -12,16 +12,16 @@ This is Terragrunt code for setting up an environment to validate an IAM policy 
 
 ## Requirements
 
-| Name       | Version |
-| ---------- | ------- |
-| terraform  | 1.4.4   |
-| terragrunt | 0.45.2  |
+| Name       | Version   |
+| ---------- | --------- |
+| terraform  | ~> 1.4.4  |
+| terragrunt | ~> 0.45.2 |
 
 ## Providers
 
-| Name | Version |
-| ---- | ------- |
-| aws  | 4.62.0  |
+| Name | Version   |
+| ---- | --------- |
+| aws  | ~> 4.62.0 |
 
 ## 事前準備
 
